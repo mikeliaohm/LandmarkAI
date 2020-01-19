@@ -30,6 +30,7 @@ namespace LandmarkAI
         {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Filter = "Image files (*.png; *.jpg)|*.png;*.jpg;*.jpeg|All files (*.*)|*.*";
+            dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
 
             if (dialog.ShowDialog() == true)
             {
